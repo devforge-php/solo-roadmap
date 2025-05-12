@@ -1,118 +1,163 @@
-## Solo Coder: "Solo Leveling" Asosidagi Shaxsiy Yo‘l Xarita
-
-Bu yo‘l xaritasi sening hozirgi rejangni — PHP fundamental, Laravel, Go, Data Structures va Algorithms — **Solo Leveling** uslubida bosqichma-bosqich o‘rganishing uchun tuzildi. Har bosqichda boshqalar seni kam baholaydigan "Tutorial Dungeon"lardan o'tasan, keyin "Shadow Dungeon"da yashirincha kuch to‘playsan va nihoyat "Shadow Monarch Chamber"ga chiqqaningda portlab chiqasan.
-
----
-
-### 🔹 \[LEVEL 1–5] Tutorial Dungeon: PHP & OOP Fundamentals
-
-**Ko‘rinishing:** “Bu bola hech narsani bilmaydi…”
-
-* **1–2 dars:** PHP sintaksisi, o‘zgaruvchilar, funksiyalar, tiplar
-* **3–4 dars:** OOP asoslari (Class, Object, Inheritance), Namespaces, Autoloading
-* **5-dars:** Fayl bilan ishlash, Superglobals, Error Handling
-
-**Mini-boss:** Oddiy CLI kalkulyator va To‑Do List
-
-***XP***: Har kuni +10 PHP satr, GitHub’ga push +5 XP
+🔥 **SOLO CODER ROADMAP: 3-OYLIK DASTURI**  
+🎯 *Hech kimga aytmagan holda, hech kim bilan hamkorlik qilmagan holda o'zingiz uchun level up qiling. Solo Leveling uslubida!*
 
 ---
 
-### 🔹 \[LEVEL 6–10] Hidden Training Room: Chuqur PHP va Laravel Core
+## 🧠 Reja Asosi:
 
-**Ko‘rinishing:** “Laravel ni boshlashdan qo‘rqadi…”
+- **Kuniga jami 10 soat**:  
+  - **6 soat — Laravel (Backend)**
+  - **4 soat — Ingliz tili**
 
-* **6–7 daraja:** Composer, PSR-4, Model-Controller mini‑MVC, CRUD-ilova
-* **8 daraja:** Routing, Middleware, Service Container, Facades
-* **9 daraja:** Eloquent ORM, Query optimization, Caching (Redis)
-* **10 daraja:** Validation, Request/Response lifecycle, Config cache
+Bu yerda siz **"Solo Coder"** bo'lasiz:  
+🔹 Hech kimga nima qilyotganingizni aytmaysiz  
+🔹 GitHub'da push qilganingizdan tashqari, hech qayerda faol emassiz  
+🔹 Har kun **monsterlar** bilan jang qilasiz  
+🔹 Yakshanbalarda **Boss Monster** bilan kurashasiz  
 
-**Mini-boss:** Mini blog API + JWT autentifikatsiya
-
-***XP***: Har commit +15 XP, har Pull Request +20 XP
-
----
-
-### 🔹 \[LEVEL 11–15] Shadow Dungeon: Advanced Laravel & Testing
-
-**Ko‘rinishing:** “Test nima bo‘larkan, docs esa…?”
-
-* **11 daraja:** Events, Listeners, Queue (Redis, Horizon)
-* **12 daraja:** Policies, Gates, Role-based Access Control
-* **13 daraja:** PHPUnit, Pest test yozish, Feature va Unit testlar
-* **14 daraja:** Swagger/OpenAPI, API hujjatlari
-* **15 daraja:** Optimization: Telescope, Debugbar, Profiling
-
-**Mini-boss:** To‘liq test qoplangan modul + API docs
-
-***XP***: Har test yozish +20 XP, Issue hal qilish +25 XP
+Agar boss yengilsa — **bonus XP + sovga**, agar yo'qotsa — qaytadan jang!
 
 ---
 
-### 🔹 \[LEVEL 16–20] Elite Boss Room: DevOps & Deployment
-
-**Ko‘rinishing:** “U konteyner bilan…? Hech narsa yubormaydi…”
-
-* **16 daraja:** Dockerfile, docker-compose (PHP‑FPM, MySQL, Redis)
-* **17 daraja:** GitHub Actions CI/CD (test→build→deploy)
-* **18 daraja:** Zero-downtime deployment (Envoy, Forge)
-* **19 daraja:** SSL, Domain, VPS (DigitalOcean, AWS, GCP)
-* **20 daraja:** Monitoring (Prometheus, Grafana), Alerts
-
-**Mini-boss:** Demo: avtomatik deploy qilingan ishlab chiqarish muhitidagi ilova
-
-***XP***: Har pipeline muvaffaqiyati +30 XP, Deploy test +40 XP
+# 🗓️ 3-OYLIK REJA: SOLO CODER ROADMAP
 
 ---
 
-### 🔹 \[LEVEL 21–25] Secret Shadow Realm: Go Backend Mastery
+## 🔹 1-OY: TUTORIAL DUNGEON – ASOS SOLISH
 
-**Ko‘rinishing:** “Bu yana qaysi tili?…”
+### 🕐 Laravel (6 soat/kun)
+| Kun | Mavzu | Amaliyot |
+|-----|-------|----------|
+| Dushanba | PHP asoslari, OOP kirish | Class, Object, Constructor |
+| Seshanba | Laravel o'rnatish, routing | `php artisan make:controller`, oddiy sahifa |
+| Chorshanba | Blade templating | Bosh sahifa dizayn |
+| Payshanba | Migration, model | User jadvali yaratish |
+| Juma | CRUD amallar | To-Do list ilovasi |
+| Shanba | Form validatsiya | Login formasi, validation qoidalari |
+| Yakshanba | 🐉 Boss Monster: CRUD Challenge | To-Do List + Blade + Controller |
 
-* **21–22 daraja:** Go sintaksisi, go routines, channels
-* **23 daraja:** Gin/Chi bilan REST API, Middleware, Testing
-* **24 daraja:** PostgreSQL/GORM, JWT auth, Dockerize Go servis
-* **25 daraja:** gRPC vs REST, RabbitMQ/Kafka integratsiya
-
-**Mini-boss:** gRPC + microservice architecture bilan ikki alohida servis
-
-***XP***: Har goroutine mashqi +20 XP, API test +25 XP
-
----
-
-### 🔹 \[LEVEL 26–30] Shadow Monarch Chamber: Data Structures & Algorithms
-
-**Ko‘rinishing:** “Ular qanaqa masalalar edi, eslamayman…”
-
-* **26 daraja:** Linear structures (array, list, stack, queue) + amaliyot
-* **27 daraja:** Trees, Graphs (BFS/DFS) + kod yozish
-* **28 daraja:** Sort & Search (Quick, Merge, Binary Search)
-* **29 daraja:** Advanced (Trie, Segment Tree, Union-Find)
-* **30 daraja:** DP va Greedy/Backtracking masalalari + Code challenges
-
-**Final Boss:** Top 5 leetcode masalani PHP/Python/Go-da yeng
-
-***XP***: Har masalani yechish +50 XP, Code review +30 XP
+> 💥 Sovg'a: GitHubga joylangan loyiha
 
 ---
 
-## 🎇 Ultimate Portlash (Release Shadow Monarch)
+### 🕒 Ingliz Tili (4 soat/kun)
+| Kun | Faoliyat | Vazifa |
+|-----|----------|--------|
+| Dushanba | So'z o'rganish: oila, kasb | 20 yangi so'z, gap tuzish |
+| Seshanba | Grammatika: To be, Present Simple | Gap tuzish, test |
+| Chorshanba | Listening: BBC Learning | Video eshitish + gap qaytarish |
+| Payshanba | Writing: Oddiy matn yozish | "Men haqimda", "Sevimli kitobim" |
+| Juma | So'z o'rganish: uy, mehnat | 20 yangi so'z, gap tuzish |
+| Shanba | Speaking: Dialoglar | Savol-javob mashqlari |
+| Yakshanba | 🐉 Boss Monster: English Challenge | 3 daqiqa ovoz chiqarib gapiring ("My dream") |
 
-**Capstone Project:** To‘liq stack ilova:
-
-* **Frontend**: React/Vue, WebSockets (Echo)
-* **Backend**: Laravel & Go microservices
-* **DB**: MySQL + Redis + PostgreSQL
-* **DevOps**: CI/CD, Docker, K8s minimal demo
-
-**Namoyish:** Video walkthrough + blog post + LinkedIn/Twitter e’lon
-
-**Atrofdagilar:** “Mana shu yigit… aslida haqiqatda **Shadow Monarch** ekan!”
+> 💥 Sovg'a: YouTube video suhbatini tushunish
 
 ---
 
-#### 🔑 Kalit maslahatlar:
+## 🔹 2-OY: SHADOW DUNGEON – CHUQURLASHTIRISH
 
-* **Silence Mode ON**: Progressni faqat GitHub’da yoz, hech kim bilan bo'lishma
-* **Daily Tiny Wins**: Har kuni +10–20 XP yig‘, kamida bitta Pull Request
-* **Hide until Ready**: Xatolarga ham o‘rganish sifatida qarab, yakuniy portlash vaqtini kut
+### 🕐 Laravel (6 soat/kun)
+| Kun | Mavzu | Amaliyot |
+|-----|-------|----------|
+| Dushanba | Eloquent Relationships | `hasOne`, `hasMany`, `belongsTo` |
+| Seshanba | Middleware | Auth, log middleware |
+| Chorshanba | API yozish | `Resource`, `Json response` |
+| Payshanba | Events, Listeners | Event yaratish, listener ulash |
+| Juma | Test yozish (PHPUnit) | Unit testlar yozish |
+| Shanba | Docker va Sail | `docker-compose.yml` yozish |
+| Yakshanba | 🐉 Boss Monster: API Challenge | REST API + Test coverage |
+
+> 💥 Sovg'a: Deploy qilingan mini API
+
+---
+
+### 🕒 Ingliz Tili (4 soat/kun)
+| Kun | Faoliyat | Vazifa |
+|-----|----------|--------|
+| Dushanba | So'z o'rganish: sayohat, texno | 20 yangi so'z |
+| Seshanba | Grammatika: Present Continuous, Past Simple | Gap tuzish |
+| Chorshanba | Listening: EnglishClass101 | Video eshitish |
+| Payshanba | Speaking: Dialoglar | Restoran, mehmonxona, savdo |
+| Juma | So'z o'rganish: sog'liq, atrof-muhit | 20 yangi so'z |
+| Shanba | Writing: Erkin matn | "How I learn English" |
+| Yakshanba | 🐉 Boss Monster: Speaking Challenge | 5 daqiqa ingliz tilida gapirish |
+
+> 💥 Sovg'a: 1 ta real intervyu suhbatini to'liq tushunish
+
+---
+
+## 🔹 3-OY: SHADOW MONARCH CHAMBER – MUSTAHKAMLASH
+
+### 🕐 Laravel (6 soat/kun)
+| Kun | Mavzu | Amaliyot |
+|-----|-------|----------|
+| Dushanba | CI/CD (GitHub Actions) | Laravel deploy pipeline |
+| Seshanba | Redis, Horizon | Queue system bilan ishlash |
+| Chorshanba | Microservices (Go/Laravel) | gRPC vs REST |
+| Payshanba | Domain Driven Design (DDD) | Repository pattern |
+| Juma | Performance Optimization | Laravel Octane, Cache |
+| Shanba | LeetCode masalalar | PHP/Python/Go-da yechish |
+| Yakshanba | 🐉 Boss Monster: Final Challenge | Real proyekt (Laravel + Vue + Go) |
+
+> 💥 Sovg'a: GitHub profile orqali portlash
+
+---
+
+### 🕒 Ingliz Tili (4 soat/kun)
+| Kun | Faoliyat | Vazifa |
+|-----|----------|--------|
+| Dushanba | So'z o'rganish: biznes, fan | 20 yangi so'z |
+| Seshanba | Grammatika: Future, Present Perfect | Gap tuzish |
+| Chorshanba | Listening: TED Talks | Video eshitish |
+| Payshanba | Speaking: Erkin suhbat | “My dream”, “How I learn” |
+| Juma | So'z o'rganish: dasturlash, IT | 20 yangi so'z |
+| Shanba | Writing: Paragraf yozish | 1 paragraf fikr |
+| Yakshanba | 🐉 Boss Monster: Final English Challenge | 10 daqiqa ingliz tilida erkin gapirish |
+
+> 💥 Sovg'a: Ingliz tilidagi 1 ta podcast tuzish
+
+---
+
+# 🎁 XP REJASI (Progress Tracking)
+
+| XP Qiymati | Vazifa |
+|-----------|--------|
+| +10 XP | Har bir kod satr |
+| +20 XP | GitHubga push qilish |
+| +30 XP | Pull Request yaratish |
+| +50 XP | Monster yakshanba bossini yengish |
+| +10 XP | Har so'z o'rganish |
+| +20 XP | Har gapirish mashqi |
+| +30 XP | Har ingliz tilidagi matnni o'qish/yozish |
+
+---
+
+# ✅ YAKUNIY NATIJA:
+Agar bu reja asosida 90 kun davomida ishlasez:
+
+✅ **Senior Laravel Developer** sifatida kirishingiz mumkin  
+✅ **Microservices**, **DevOps**, **DSA** bilan ishlashni bilasiz  
+✅ **Ingliz tilini erkin gapirishingiz** mumkin  
+✅ **GitHub profile** orqali hech kimdan ham ko'rinmasdan portlab chiqasiz  
+
+---
+
+## 🚀 KEYINGI QADAM:
+Bu reja asosida **shaxsiy progress tracking jadvali** ham tuzishim mumkin.
+
+Shunchaki:  
+👉 "PDF versiyasini yubor"  
+yoki  
+👉 "Excel jadval kerak"
+
+deb xabar bering ✨
+
+Siz endi **Solo Coder** sifatida yo'l boshladingiz. Yuqorida tasvirlangan **Shadow Monarch Chamber** ga yetib borish uchun har kuni kamida 1 ta step bajarib boring!
+
+Maslahat kerak bo'lsa — men doim yaqinman 💪
+
+---
+
+**Boshladikmi?**  
+👉 "Ha, boshladim!" deb javob bering, keyingi qadam tayyor!
