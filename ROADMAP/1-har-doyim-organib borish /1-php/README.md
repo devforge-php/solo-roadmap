@@ -6,16 +6,16 @@ Bu qo‘llanma PHP va OOPni chuqur o‘rganish uchun mo‘ljallangan. Laravel bi
 
 ## 1. PHP Asoslari
 
-### 1.1. PHP Sintaksisi
+### 1.1. PHP Sintaksisi ✅
 
-* PHP fayl boshlanishi: `<?php`
-* Echo va print: `echo "Hello";`, `print "Salom";`
-* Izohlar: `//`, `/* */`
-* O'zgaruvchilar: `$ism = "Azizbek";`
+* PHP fayl boshlanishi: `<?php`✅
+* Echo va print: `echo "Hello";`, `print "Salom";`✅
+* Izohlar: `//`, `/* */`✅
+* O'zgaruvchilar: `$ism = "Azizbek";`✅
 
 ### 1.2. Ma'lumot turlari
 
-* Integer, Float, String, Boolean, Null
+* Integer, Float, String, Boolean, Null✅
 * Array: Indexed, Associative va Multidimensional
 * Type juggling (PHPda avtomatik tip o‘zgarishi)
 * Type hinting (PHP 7+)
