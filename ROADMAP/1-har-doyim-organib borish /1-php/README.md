@@ -20,19 +20,19 @@ Bu qo‘llanma PHP va OOPni chuqur o‘rganish uchun mo‘ljallangan. Laravel bi
 * Type juggling (PHPda avtomatik tip o‘zgarishi)
 * Type hinting (PHP 7+)
 
-### 1.3. Operatorlar
+### 1.3. Operatorlar✅
 
 * Arifmetik: `+`, `-`, `*`, `/`, `%`
 * Taqqoslash: `==`, `===`, `!=`, `<`, `>`
 * Mantiqiy: `&&`, `||`, `!`
 * Bitwise, Ternary operator (`? :`), Null coalescing operator (`??`)
 
-### 1.4. Shart va Takrorlash
+### 1.4. Shart va Takrorlash✅
 
 * `if`, `else`, `elseif`, `switch`
 * `while`, `do-while`, `for`, `foreach`
 
-### 1.5. Funktsiyalar
+### 1.5. Funktsiyalar ✅
 
 * Oddiy funksiyalar
 * Default qiymatlar
@@ -41,7 +41,7 @@ Bu qo‘llanma PHP va OOPni chuqur o‘rganish uchun mo‘ljallangan. Laravel bi
 * Anonymous (lambda) funksiyalar
 * Callback funksiyalar
 
-### 1.6. Fayl bilan ishlash
+### 1.6. Fayl bilan ishlash 
 
 * `fopen`, `fread`, `fwrite`, `fclose`
 * `file_get_contents`, `file_put_contents`
