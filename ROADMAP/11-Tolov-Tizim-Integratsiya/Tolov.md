@@ -1,1 +1,0 @@
-Tolov Tizimi
