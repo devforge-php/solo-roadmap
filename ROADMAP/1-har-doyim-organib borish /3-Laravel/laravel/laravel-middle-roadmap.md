@@ -1,196 +1,218 @@
----
+Tushunarli Azizbek! Seni hozirgi bosqichingga qaraganda, **Laravel Middle Developer** bo‘lish sari qadam qo‘yayapsan, lekin hali Docker, Microservices, CI/CD, Horizon, va shunga o‘xshagan yuqori darajadagi texnologiyalarni bilmas ekansan. Shu sababli men senga **realistik va step-by-step Laravel roadmap** yozaman – **docker, microservices, advanced tools** ni keyingi bosqichga qo‘yaman. Hozirgi yo‘nalish quyidagilarga qaratilgan:
 
-# 🧠 Laravel Middle to Senior Developer - Chuqur Roadmap (Ideal Variant)
-
-Bu hujjat Laravel dasturchisi sifatida middle darajadan senior darajaga o'tish uchun to'liq va tizimli yo'l xaritasini beradi. Har bir bosqichda nimalar o'rganilishi, qanday mini-loyihalar qilinishi, qanday texnologiyalarni egallash kerakligi ko'rsatilgan.
-
----
-
-## 🔰 **1. Asosiy Laravel Core mexanizmlari**
-
-### Nimalarni o'rganish kerak:
-
-* Laravel Lifecycle (Request > Middleware > Controller > Response)
-* HTTP Kernel va Console Kernel
-* Service Container: `bind`, `singleton`, `make`
-* Laravel Facades qanday ishlaydi
-* Macroable trait (Collection, Response, Request)
-* Custom Service Providers yozish
-* Laravel config ishlash tartibi: `.env`, `config/`, `artisan config:cache`
-
-### Mini-loyiha:
-
-* `CurrencyConverterService` → custom service provider, config, facade orqali amalga oshirish
+> 🔹 Laravel Core'ni chuqur tushunish
+> 🔹 Real loyiha qilish orqali tajriba
+> 🔹 Kod sifatini oshirish
+> 🔹 Tizimni kengaytirish (Events, Service Layer, Observer)
+> 🔹 Yaxshi Laravel developer bo‘lish uchun zarur asoslar
 
 ---
 
-## 🔄 **2. Event, Observer va Listener tizimlari**
-
-### O'rganiladigan mavzular:
-
-* Event va Listener mexanizmi (sync/async)
-* Model observers: `creating`, `created`, `updating`, `deleted`, va h.k.
-* Broadcast Events: Pusher, Redis, Echo
-* Queued Listeners va Event Subscribers
-
-### Mini-loyiha:
-
-* `UserRegistrationNotifier` → observer orqali email yuborish, listenerlar bilan log yozish
+## 🧱 Laravel Middle Developer Roadmap (Docker va Microservice bilmaganlar uchun)
 
 ---
 
-## 🏗️ **3. Arxitektura va Strukturaviy Yondashuv**
+### 1. 📌 Laravel'ni Chuqur Tushunish
 
-### Muhim mavzular:
+#### 🎯 Maqsad:
 
-* Modular Structure: `Modules/`, Composer packages
-* Repository + Service Layer pattern
-* Interface Segregation, Dependency Injection
-* Multi-Tenancy (Stancl/Tenancy)
+Laravel qanday ishlashini ichki tomondan tushunish.
 
-### Mini-loyiha:
+#### Nimalarni o‘rganasan:
 
-* `TaskManagerModular` → Modular arxitektura bilan CRUD
+* Laravel lifecycle (Request → Middleware → Controller → Response)
+* Service Container (`bind`, `singleton`, `make`)
+* Service Provider’lar
+* Config va .env bilan ishlash
+* Route, Controller, Middleware’lar ichki ishlashini
+* Facades va static facade nima
 
----
+#### 🎯 Mini Loyiha:
 
-## 🚀 **4. Performance va Scale uchun optimizatsiya**
-
-### Texnologiyalar:
-
-* Laravel Octane (Swoole, RoadRunner)
-* Route, Config, View Cache
-* Redis/Memcached bilan taggable caching
-* Query optimizatsiyasi: `with`, `withCount`, `loadMissing`, N+1 oldini olish
-
-### Asboblar:
-
-* Laravel Telescope
-* Laravel Debugbar
-* Blackfire.io bilan profiling
-
-### Mini-loyiha:
-
-* `ProfiledBlogSystem` → caching, eager loading va monitoringlar bilan
+**Custom Service Class** bilan `WeatherService` yoz (API chaqiradi, config o‘qiydi, cache qiladi).
 
 ---
 
-## 🕒 **5. Queue tizimi va Real-Time funksiyalar**
+### 2. 🔄 Eloquent + Observer + Events
 
-### O'rganiladigan mavzular:
+#### 🎯 Maqsad:
 
-* Laravel Queue Drivers: sync, Redis, Beanstalkd, SQS
-* Job batching, chaining, delayed jobs, retry, fail handling
-* Laravel Horizon va Supervisor bilan ishlash
-* Laravel Echo + WebSockets + Redis pub/sub
+Model bilan ishlashda kuchli tizimlar yaratish.
 
-### Mini-loyiha:
+#### Nimalarni o‘rganasan:
 
-* `RealTimeChat` → Echo + Redis + Laravel WebSockets bilan ishlash
+* Observer: `creating`, `updating`, `deleting`
+* Event va Listener yaratish
+* Mass Assignment (`$fillable`, `$guarded`)
+* Accessor & Mutator
+* Query Scope
+* Relationship: one-to-many, many-to-many, morph
 
----
+#### 🎯 Mini Loyiha:
 
-## 📦 **6. Docker, CI/CD, Deploy tizimlari**
+**Blog tizimi**: `Post` → `Comment` → `User`
 
-### Docker:
-
-* Dockerfile, docker-compose.yml (PHP-FPM, Nginx, Redis)
-* Laravel Sail ishlatish
-* Volume, network, build args
-
-### CI/CD:
-
-* GitHub Actions bilan test/deploy pipeline
-* Zero-downtime deploy: Envoy, symbolic links
-* Feature flags, rollback strategiyasi
-
-### Mini-loyiha:
-
-* `DockerizedCRM` → Laravel, Redis, Nginx, MySQL, CI/CD pipeline bilan
+* Post yaratilganda event chaqirilsin
+* Observer bilan comment sanog‘i hisoblanadi
 
 ---
 
-## 🧩 **7. Domain Driven Design (DDD) va Microservices**
+### 3. 🗂 Service Layer va Clean Architecture
 
-### DDD asoslari:
+#### 🎯 Maqsad:
 
-* Entity, Value Object, Aggregate Root
-* Application, Domain, Infrastructure layer
+Kodning toza, tartibli va kengaytiriladigan bo‘lishi.
 
-### Microservices:
+#### Nimalarni o‘rganasan:
 
-* REST, GraphQL, gRPC farqlari
-* Laravel + gRPC integratsiya
-* Auth microservice: Passport, JWT
-* Service Discovery va Event-driven kommunikatsiya
+* Controller logikani o‘z ichiga olmaydi
+* `App\Services\` ichida business logika
+* Interface va Contract’lar
+* Repository pattern (optional)
 
-### Mini-loyiha:
+#### 🎯 Mini Loyiha:
 
-* `OrderSystem` → Auth service, order service, queue orqali aloqa
-
----
-
-## 🧪 **8. Testing va Debugging**
-
-### Test turlari:
-
-* Unit Test (PHPUnit, Mock)
-* Feature Test (HTTP layer)
-* Browser Test (Laravel Dusk)
-* PEST bilan test yozish
-
-### Asboblar:
-
-* Xdebug + PhpStorm
-* Laravel Telescope, Debugbar, Papertrail
-
-### Mini-loyiha:
-
-* `TestedBlog` → Full unit/feature/browser testlar bilan
+**UserService + AuthService**: foydalanuvchi ro‘yxatdan o‘tadi, email yuboriladi, xizmatlar orqali.
 
 ---
 
-## 🧠 **9. Senior-Level Bonus Features**
+### 4. 🧪 Validation, Error Handling, Logging
 
-### Laravel + Advanced Texnologiyalar:
+#### 🎯 Maqsad:
 
-* Laravel CQRS pattern
-* GraphQL (Lighthouse)
-* PostgreSQL JSONB
-* Laravel Scout + MeiliSearch
-* Laravel Cashier (Stripe)
-* Laravel Jetstream, Breeze, Socialite
-* Laravel Pint, PHPStan, Larastan
+Xatolarni boshqarish va foydalanuvchiga to‘g‘ri xabar berish.
 
----
+#### Nimalarni o‘rganasan:
 
-## ✅ Yakuniy Natija
+* Form Request Validation
+* Custom Rule yaratish
+* Exception handle qilish
+* Loglar: `info()`, `warning()`, `error()` larni yozish
+* Laravel Debugbar (dev uchun)
 
-Senior Laravel Developer bo'lish uchun siz quyidagilarga ega bo'lishingiz kerak:
+#### 🎯 Mini Loyiha:
 
-✅ Laravel arxitekturasi va ichki ishlashini chuqur tushunish
-✅ High-load loyihalarni strukturaviy yondashuvda qura olish
-✅ Docker, CI/CD, Horizon, Octane va boshqa scale vositalarini ishlata olish
-✅ DDD, Microservices, Event-driven dizaynni ishlata olish
-✅ Testing, Debugging, Monitoring ko'nikmalari
+**Register form**:
+
+* Foydalanuvchi emailini tekshiruvchi custom rule
+* Exception bo‘lsa, logga yozilsin
 
 ---
 
-## 📌 Maslahat:
+### 5. 📊 Seeder, Factory, Fake Ma’lumotlar
 
-> Har bir asosiy bo'limda 1 yoki 2 mini-loyiha yarating.
-> Har bir mini-loyihada o'rgangan nazariyani real amaliyotga tatbiq eting.
-> Eng yaxshi mini-loyihalaringizni GitHub profilga joylang va README.md ni mukammal yozing.
+#### 🎯 Maqsad:
+
+Test yoki dev muhitda tez sample ma’lumot olish.
+
+#### Nimalarni o‘rganasan:
+
+* Seeder bilan ko‘p data yaratish
+* Factory orqali model create qilish
+* Faker kutubxonasi
+* `DatabaseSeeder` orqali ularni chaqirish
+
+#### 🎯 Mini Loyiha:
+
+**Online kurslar**: `Course`, `Category`, `User` – 100ta kurs, 20ta category va ularga random assign
 
 ---
 
-## 📚 Manbalar
+### 6. 💡 Authentication & Authorization
 
-* Laravel Docs: [https://laravel.com/docs](https://laravel.com/docs)
-* Laravel Beyond CRUD
-* GitHub Actions Docs
-* Docker - Zero to Hero
-* PestPHP: [https://pestphp.com](https://pestphp.com)
-* Blackfire.io, Sentry, Horizon Docs
+#### 🎯 Maqsad:
+
+Foydalanuvchi kirishi, huquq nazorati
+
+#### Nimalarni o‘rganasan:
+
+* Laravel Breeze yoki Fortify (UI kerak bo‘lsa)
+* Auth middleware
+* Role-based auth (Gate, Policy)
+* Email verification
+* Password reset
+
+#### 🎯 Mini Loyiha:
+
+**Admin panel** – faqat `admin` roli kiradi, oddiy foydalanuvchi kirsa, error chiqadi
 
 ---
+
+### 7. 📬 Notification va Email
+
+#### 🎯 Maqsad:
+
+Foydalanuvchiga xabar yuborish
+
+#### Nimalarni o‘rganasan:
+
+* Laravel Notification (mail, database, sms)
+* Mail Template yaratish
+* `.env` orqali mailgun yoki smtp sozlash
+
+#### 🎯 Mini Loyiha:
+
+**Comment bo‘lsa → Email yuborilsin**
+Yangi comment qo‘shilganda foydalanuvchiga habar boradi
+
+---
+
+### 8. 📁 File Upload va Storage
+
+#### 🎯 Maqsad:
+
+Fayllar bilan ishlash: rasm yuklash, media saqlash
+
+#### Nimalarni o‘rganasan:
+
+* Laravel Storage API (`Storage::disk('local')`)
+* Public va Private fayllar
+* Validation (file size, mime type)
+* Image Intervention bilan rasm o‘lchamini o‘zgartirish (optional)
+
+#### 🎯 Mini Loyiha:
+
+**Profil rasmi yuklash** – validatsiya, fayl saqlash, eski faylni o‘chirish
+
+---
+
+### 9. 🛠 Qo‘shimcha Laravel Asboblar
+
+| Asbob              | Foydasi                                          |
+| ------------------ | ------------------------------------------------ |
+| Laravel Tinker     | Terminalda model bilan ishlash                   |
+| Laravel Debugbar   | Dev uchun xatolarni ko‘rish                      |
+| Laravel IDE Helper | Kod yozishda yordam                              |
+| Laravel Telescope  | So‘rovlarni, Exception’larni, Mail’ni ko‘rish    |
+| Laravel Backup     | Ma’lumotlarni zaxiralash (spatie/laravel-backup) |
+
+---
+
+### 10. 🔚 Keyingi Bosqichga O‘tish Uchun Tayyorgarlik
+
+Hozircha quyidagilarni bilmasang ham bo‘ladi, lekin bu roadmapdan keyin **senga tayyor bo‘lib qoladi**:
+
+* Docker & Laravel Sail
+* Laravel Horizon
+* CI/CD (GitHub Actions)
+* Laravel Echo + Redis
+* Microservices (Passport, JWT, gRPC)
+* Laravel Package yaratish
+
+---
+
+## 💼 Yakuniy Loyiha Taklifi
+
+> **Laravel School Management System**
+> Funktsiyalar:
+
+* O‘quvchi ro‘yxatdan o‘tadi
+* O‘qituvchi qo‘shadi, jadval tuzadi
+* Uy ishlari qo‘shiladi
+* Admin panel (auth, role, ruxsatlar)
+
+---
+
+Agar xohlasang, ushbu roadmap bo‘yicha PDF shaklida chiqarib beraman yoki **Notion jadvaliga aylantirib**, reja qilishga yordam beraman.
+
+Xohlagan shaklda beraymi? (PDF, Trello board, Notion)? Yoki o‘sha Laravel school loyihasining to‘liq strukturasi kerakmi?
