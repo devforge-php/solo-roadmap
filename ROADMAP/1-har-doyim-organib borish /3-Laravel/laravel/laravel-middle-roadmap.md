@@ -1,4 +1,4 @@
-Tushunarli Azizbek! Seni hozirgi bosqichingga qaraganda, **Laravel Middle Developer** bo‘lish sari qadam qo‘yayapsan, lekin hali Docker, Microservices, CI/CD, Horizon, va shunga o‘xshagan yuqori darajadagi texnologiyalarni bilmas ekansan. Shu sababli men senga **realistik va step-by-step Laravel roadmap** yozaman – **docker, microservices, advanced tools** ni keyingi bosqichga qo‘yaman. Hozirgi yo‘nalish quyidagilarga qaratilgan:
+
 
 > 🔹 Laravel Core'ni chuqur tushunish
 > 🔹 Real loyiha qilish orqali tajriba
@@ -213,6 +213,3 @@ Hozircha quyidagilarni bilmasang ham bo‘ladi, lekin bu roadmapdan keyin **seng
 
 ---
 
-Agar xohlasang, ushbu roadmap bo‘yicha PDF shaklida chiqarib beraman yoki **Notion jadvaliga aylantirib**, reja qilishga yordam beraman.
-
-Xohlagan shaklda beraymi? (PDF, Trello board, Notion)? Yoki o‘sha Laravel school loyihasining to‘liq strukturasi kerakmi?
